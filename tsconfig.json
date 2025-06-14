@@ -1,0 +1,20 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    // Framer motion
+    "jsx": "react-jsx",  // or "preserve"
+    "module": "ESNext",
+    "target": "ES6",
+    "lib": ["DOM", "ES6"],
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
