@@ -1,9 +1,9 @@
 import { Suspense, lazy } from '@/utils/imports'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import NavbarWithMegaMenu from './components/NavbarWithMegaMenu';
-import Login from './pages/authentication/login/Login';
 const Home = lazy(() => import("@/pages/home/Home.tsx"));
 const Signup = lazy(() => import("@/pages/authentication/signup/Signup"));
+const Login = lazy(() => import("./pages/authentication/login/Login"));
 const PageNotFound = lazy(() => import("@/pages/404/PageNotFound"));
 
 
@@ -14,7 +14,7 @@ function App() {
         <header>
           <NavbarWithMegaMenu />
         </header>
-        
+
         <Suspense fallback={<>loading</>}>
           <Routes>
             {/* HOME */}
