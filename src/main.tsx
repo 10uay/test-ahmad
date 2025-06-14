@@ -20,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
           flickerChance={0.1}
           height={1000}
           width={2000}
+          
         />
       </div>
 
