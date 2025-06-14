@@ -97,7 +97,7 @@ export default function Stepper({
       {...rest}
     >
       <div
-        className={`mx-auto w-full max-w-md rounded-4xl shadow-xl ${stepCircleContainerClassName}`}
+        className={`mx-auto w-full max-w-md rounded-4xl shadow-xl bg-white ${stepCircleContainerClassName}`}
         style={{ border: "1px solid #222" }}
       >
         <div
@@ -165,7 +165,7 @@ export default function Stepper({
               )}
               <button
                 onClick={isLastStep ? handleComplete : handleNext}
-                className="duration-350 cursor-pointer flex items-center justify-center rounded-full bg-[#5227FF] py-1.5 px-3.5 font-medium tracking-tight text-white transition hover:bg-[#5227ffb4] active:bg-[#5227ffb9]"
+                className="duration-350 cursor-pointer flex items-center justify-center rounded-full bg-[#327bf9] py-1.5 px-3.5 font-medium tracking-tight text-white transition hover:bg-[#327bf9b4] active:bg-[#327bf9b9]"
                 {...nextButtonProps}
               >
                 {isLastStep ? "Complete" : nextButtonText}
@@ -311,8 +311,8 @@ function StepIndicator({
       <motion.div
         variants={{
           inactive: { scale: 1, backgroundColor: "#222", color: "#a3a3a3" },
-          active: { scale: 1, backgroundColor: "#5227FF", color: "#5227FF" },
-          complete: { scale: 1, backgroundColor: "#5227FF", color: "#3b82f6" },
+          active: { scale: 1, backgroundColor: "#327bf9", color: "#327bf9" },
+          complete: { scale: 1, backgroundColor: "#327bf9", color: "#3b82f6" },
         }}
         transition={{ duration: 0.3 }}
         className="flex h-8 w-8 items-center justify-center rounded-full font-semibold"
@@ -336,7 +336,7 @@ interface StepConnectorProps {
 function StepConnector({ isComplete }: StepConnectorProps) {
   const lineVariants: Variants = {
     incomplete: { width: 0, backgroundColor: "transparent" },
-    complete: { width: "100%", backgroundColor: "#5227FF" },
+    complete: { width: "100%", backgroundColor: "#327bf9" },
   };
 
   return (

@@ -102,7 +102,7 @@ export default function NavbarWithMegaMenu() {
 
   return (
     <Navbar
-      className="mx-auto max-w-screen-xl lg:w-[1000px] md:w-[500px] w-[300px] px-4 lg:py-1 py-2 lg:mb-2 border border-gray-300 border-t-0 rounded-t-none shadow-none"
+      className="mx-auto max-w-screen-xl lg:w-[1000px] md:w-[500px] w-[300px] relative z-50 px-4 lg:py-1 py-2 lg:mb-2 border border-gray-300 border-t-0 rounded-t-none shadow-none"
     // placeholder={undefined}
     // onPointerEnterCapture={undefined}
     // onPointerLeaveCapture={undefined}
